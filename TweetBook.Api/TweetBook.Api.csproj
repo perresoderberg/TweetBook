@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-TweetBook-A8785F58-4131-4A04-AAE1-354AFF502996</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TweetBook.Authentication\TweetBook.Authentication.csproj" />
+    <ProjectReference Include="..\TweetBook.Core\TweetBook.Core.csproj" />
+    <ProjectReference Include="..\TweetBook.Extensions\TweetBook.Extensions.csproj" />
+  </ItemGroup>
+
+</Project>
